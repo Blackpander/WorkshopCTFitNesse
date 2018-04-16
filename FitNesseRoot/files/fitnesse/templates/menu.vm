@@ -80,8 +80,10 @@
         #set( $nav_newsection = 0 )
         #macro( group $n )#if( $nav_newsection != 0 && $nav_newsection != $n ) class="divider"#end#set( $nav_newsection = $n )#end
         <ul class="dropdown-menu">
-                <li#group(1)><a href="Documentatie">Algemene Documentatie</a></li>
+                <li#group(1)><a href="Documentatie.AlgemenInformatie">Algemene Documentatie</a></li>
+                <li#group(1)><a href="Documentatie.GitUserGuide">Git User Guide</a></li>
                 <li#group(1)><a href="HsacExamples">Hsac Examples</a></li>
+                <li#group(1)><a href="FitNesse.UserGuide">FitNesse User Guide</a></li>
                 <li#group(1)><a href="HsacAcceptanceTests">Hsac Acceptance Tests</a></li>
                 <li#group(1)><a href="http://localhost:8000/HsacExamples.SlimTests.BrowserTests">Hsac Language</a></li>
         </ul>
