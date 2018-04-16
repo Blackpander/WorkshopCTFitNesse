@@ -1,0 +1,29 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+|!3 Titel en beschrijving van functie                                                                                                                   |!3 De volledige tekst in het grijze veld kopiëren naar je script:|!3 Voorbeeld van resultaat:|
+|!4 Functie willekeurige BSN nummer                                                                                                                     |!5 random BSN                                                                                |
+|!note De functie '''!-!randomBSN-!''' genereert elke keer bij het testen een nieuw, niet-bestaand BSN nummer.                                          |{{{!-!randomBSN-!}}}                                             |!randomBSN                 |
+|!4 Functie willekeurig cijfer                                                                                                                          |!5 random positive integer                                                                   |
+|!note De functie '''!-!randomInt-!''' genereert elke keer een random getal met maximaal 10 cijfers                                                     |{{{!-!randomInt-!}}}                                             |!randomInt                 |
+|!4 Functie willekeurig getal binnen een bepaald bereik                                                                                                 |!5 random integer (between where upper is non-inclusive)                                     |
+|!note De functie '''!-!randomInt (10,20)-!''' genereert een getal tussen de 10 en 20, waarbij het hoogste getal niet meedoet.                          |{{{!-!randomInt (10,20)-!}}}                                     |!randomInt (10,20)         |
+|!4 Functie volledig willekeurige bankrekening (IBAN)                                                                                                   |!5 random Iban (random based on available countries)                                         |
+|!note De functie '''!-!randomIBAN-!''' genereert op basis van beschikbare landen een willekeurige, niet-bestaande IBAN.                                |{{{!-!randomIBAN-!}}}                                            |!randomIBAN                |
+|!4 Functie willekeurige NL bankrekening (IBAN)                                                                                                         |!5 random Iban (country code)                                                                |
+|!note De functie '''!-!randomIBAN (NL)-!''' genereert een willekeurige, niet-bestaande IBAN voor 1 land. In dit voorbeeld Nederland:                   |{{{!-!randomIBAN (NL)-!}}}                                       |!randomIBAN (NL)           |
+|!4 Functie willekeurige NL bankrekening met banknaamspecificatie (IBAN)                                                                                |!5 random Iban (country code, bank code)                                                     |
+|!note De functie '''!-!randomIBAN (NL) (ABNA)-!''' genereert een willekeurige NL bankrekening met banknaamspecificatie. In dit voorbeeld ABN AMRO:     |{{{!-!randomIBAN (NL) (ABNA)-!}}}                                |!randomIBAN (NL) (ABNA)    |
+|!note Dezelfde functie is ook beschikbaar voor bijvoorbeeld RABO '''!-!randomIBAN (NL) (RABO)-!'''. Andere banken zijn ook mogelijk zoals INGB of BUNQ:|{{{!-!randomIBAN (NL) (RABO)-!}}}                                |!randomIBAN (NL) (RABO)    |
+|!4 Functie voor het genereren van postcodes                                                                                                            |!5 random Postal Code (using default NL)                                                     |
+|!note De functie '''!-!random Postal Code (using default NL)-!''' maakt een willekeurige, niet-bestaande postcode aan.                                 |{{{!-!randomPostalCode-! }}}                                     |!randomPostalCode          |
+|!4 Functie voor het genereren van een willekeurige buitenlandse postcode                                                                               |!5 random Postal Code (possible: AU, BE, BR, CA, CH, DE, GL, FR, IT, NL, NO, US)             |
+|!note De functie '''!-!randomPostalCode (AU)-!''' genereert een willekeurige buitenlandse postcode, in dit voorbeeld Australië.                        |{{{!-!randomPostalCode-! (AU)}}}                                 |!randomPostalCode (AU)     |
