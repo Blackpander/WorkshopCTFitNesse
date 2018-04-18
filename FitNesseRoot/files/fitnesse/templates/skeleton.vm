@@ -30,7 +30,7 @@
   <link rel="stylesheet" type="text/css" href="${contextRoot}files/fitnesse/wysiwyg/wysiwyg.css" media="screen"/>
   <link rel="stylesheet" type="text/css" href="${contextRoot}files/fitnesse/bootstrap-plus/css/fitnesse-bootstrap-plus.css">
   <link rel="stylesheet" type="text/css" href="${contextRoot}files/fitnesse/bootstrap-plus/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="${contextRoot}files/fitnesse/bootstrap/css/fitnesse-custom.css">
+  <link rel="stylesheet" type="text/css" href="${contextRoot}files/fitnesse/bootstrap-plus/css/fitnesse-computest.css">
   <link rel='stylesheet' id='google-font-api-special-1-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%2C100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.4.2' type='text/css' media='all' />
   <link rel='stylesheet' id='google-font-api-special-2-css'  href='https://fonts.googleapis.com/css?family=Abel%3A100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%2C100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=4.4.2' type='text/css' media='all' />
 
