@@ -1,4 +1,4 @@
-!contents
+!contents -R2 -g -p -f -h
 
 !path fixtures
 !path fixtures/*.jar

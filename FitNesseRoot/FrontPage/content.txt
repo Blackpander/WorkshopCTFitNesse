@@ -14,3 +14,5 @@ Let op het gebruiken van [[!-WikiWord-!][.FitNesse.UserGuide.FitNesseWiki.WikiWo
 |[[Release Notes][.FitNesse.ReleaseNotes]]                     |''De nieuwste toevoegingen van !-FitNesse-!.'' |
 
 !note Release ${FITNESSE_VERSION}
+
+!contents -R2 -g -p -f -h
