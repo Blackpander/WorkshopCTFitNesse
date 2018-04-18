@@ -1,0 +1,62 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+!4 Hier vind je de uitleg op welke manieren je een script kunt schrijven.
+
+Er bestaan drie manieren binnen !-FitNesse-! om een script te schrijven. Deze zijn script, storyboard en table template. Deze manieren zijn niet te combineren met elkaar.
+
+|!5 Script                                                                                                                                                                  |
+|Een script voert heel simpel elke stap uit van de bovenste regel tot de onderste. Een script is het beste te gebruiken als je met weinig variabelen werkt.                 |
+|Scripts zijn vergelijkbaar met table templates, omdat ze bij foutmeldingen of errors een screenshot maken. Zo kun je makkelijk zien waar de fout zich bevindt in je script.|
+|Een voorbeeld van een script ziet er als volgt uit:                                                                                                                        |
+
+!*****> Voorbeeld van een script
+-|Comment|
+|'''FitNesse commands'''|'''Variabelen/zoekopdrachten'''|
+|script                                                 |
+|open                   |www.google.nl                  |
+|enter                  |Vivat     |for     |Zoeken     |
+|press enter                                            |
+|wait for visible       |Vivat                          |
+**********!
+
+|!5 storyboard                                                                                                                      |
+|Een storyboard heeft dezelfde opbouw als een script.                                                                               |
+|Het grote voordeel van storyboard, is dat hierbij bij elke stap/regel een screenshot wordt gemaakt.                                |
+|'''Probeer alleen niet teveel met storyboards te werken, het kost veel meer resources ten op zichte van scripts/table templates.'''|
+|Een voorbeeld van een storyboard is:                                                                                               |
+
+!*****> Voorbeeld van een storyboard
+-| Comment |
+|storyboard                       |
+|open            |www.google.nl   |
+|enter           |Vivat|for|Zoeken|
+|press enter                      |
+|wait for visible|Vivat           |
+**********!
+
+|!5 table template                                                                                                                                         |
+|Een table template is de meest uitgebreide vorm die te gebruiken is binnen !-FitNesse-!. Het is namelijk mogelijk om variabelen in een tabel in te vullen.|
+|Op deze manier kun je 1 script starten, en voor bijvoorbeeld 10 verschillend cases achter elkaar laten starten.                                           |
+|Een voorbeeld van een table template ziet er als volgt uit:                                                                                               |
+
+!*****> Voorbeeld van een table template
+-| Comment |
+|table template  |script voorbeeld          |
+|open            |@{website}                |
+|enter           |@{zoekopdracht}|for|Zoeken|
+|press enter                                |
+|wait for visible|@{zoekopdracht}           |
+
+!|script voorbeeld         |
+|website      |zoekopdracht|
+|www.google.nl|Vivat       |
+**********!

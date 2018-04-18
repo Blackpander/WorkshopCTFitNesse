@@ -1,0 +1,14 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+!*****> '''Zoeken op basis van id's'''
+Te vinden in dev tools van Chrome
+**********!

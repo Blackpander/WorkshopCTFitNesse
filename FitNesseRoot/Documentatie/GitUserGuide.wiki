@@ -1,0 +1,19 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+!2 Git User Guide
+Om testbestanden van een naar Visual Studio Team Services (VSTS) te kunnen sturen wordt Microsoft Visual Studio Code (VS Code) gebruik. Aangezien het project type een Git project is wordt gebruik gemaakt van de Git standaard voor versiebeheer. De basisbegrippen en acties worden in hier beschreven.
+
+[[Quick Reference][.Documentatie.GitUserGuide.QuickReference]]
+[[Wat is Git?][.Documentatie.GitUserGuide.WatIsGit]]
+[[Je changes bekijken in Git][.Documentatie.GitUserGuide.ChangesBekijkenInGit]]
+[[Bestanden versturen naar VSTS][.Documentatie.GitUserGuide.BestandenSturenNaarVsts]]
+[[F.A.Q.][.Documentatie.GitUserGuide.FrequentlyAskedQuestions]]

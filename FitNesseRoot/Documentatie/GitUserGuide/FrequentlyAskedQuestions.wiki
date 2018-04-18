@@ -1,0 +1,37 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+!***> Er was geen bericht en er staat niets onder het kopje staged changes en changes
+In dit geval zijn er geen bestanden overgehaald en ben je klaar om bestanden naar VSTS te sturen.
+ * Klik op het '...' menu en vervolgens op Sync
+ * je zal links onder zien dat er gesynchroniseerd wordt. Als dit klaar is zal je linksonder alles op nul zien staan of ziet het eruit zoals hieronder weergegeven.
+ * !img files/images/GitUserGuide/9MiniMenuExample2.png 
+*!
+!***> Er was geen bericht en er staan bestanden onder het kopje staged changes en/of changes
+In dit geval zijn er bestanden overgehaald van je collega's.
+ * Stage alle bestanden die je net hebt overgehaald. Hiermee accepteer je de aanpassingen van je collega's
+ * Geeft weer een bericht op en klik op het vinkje.
+ * Klik op het '...' menu en vervolgens op Sync
+ * je zal links onder zien dat er gesynchroniseerd wordt. Als dit klaar is zal je linksonder alles op nul zien staan of ziet het eruit zoals hieronder weergegeven.
+ *  !img files/images/GitUserGuide/9MiniMenuExample2.png 
+*!
+!***> Er was een melding dat er een merge conflict is
+In dit geval zijn er bestanden overgehaald van je collega's en blijkt dat jullie in een of meerdere bestanden beide een aanpassing hebben gedaan.
+ * Indien je een conflict hebt, zal je een kopje merge changes zien. 
+ * Klik op het bestand onder merge changes
+ * Je zal nu voor dit bestand aan moeten geven of je de aanpassingen van je collega wil behouden (Accept Incoming Change), de aanpassingen van jezelf wil behouden (Accept Current Change) of beide wil samenvoegen (Accept Both Changes). Klik hiervoor op een van de drie opties. Doe dit voor alle bestanden onder het kopje merge changes.
+ * !img files/images/GitUserGuide/8MergeResolvingExample.png 
+ * Stage nu alle andere bestanden die onder de kopjes merge changes staan en het kopje changes zelf. Hiermee geeft je aan wat er moet gebeuren met de conflicten.
+ * Geeft weer een bericht op en klik op het vinkje.
+ * Klik op het '...' menu en vervolgens op Sync
+ * je zal links onder zien dat er gesynchroniseerd wordt. Als dit klaar is zal je linksonder alles op nul zien staan of ziet het eruit zoals hieronder weergegeven.
+ * !img files/images/GitUserGuide/9MiniMenuExample2.png 
+*!

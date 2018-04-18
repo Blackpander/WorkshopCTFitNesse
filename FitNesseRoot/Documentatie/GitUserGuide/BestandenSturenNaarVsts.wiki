@@ -1,0 +1,23 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+Als je een of meerdere aanpassingen heb gedaan en deze naar VSTS wil versturen, die je de volgende stappen te volgen
+ * Selecteer de changes en stage deze door met rechts te klikken en Stage Changes te kiezen
+ * !img files/images/GitUserGuide/3StageChangesExample.png
+ * Je zal nu een kopje met staged changes zien. Indien je nog bestanden hebt staan onder het kopje changes dien je voordat je verder gaat deze ook te stagen of met rechts te klikken en discard changes te kiezen.
+ * Geef vervolgens een bericht mee die voor anderen in VSTS later zichtbaar is in de bestandsgeschiedenis en klik op het vinkje. Je hebt nu een commit gedaan.
+ * !img files/images/GitUserGuide/4CommitStagedChangesExample.png
+ * Kijk vervolgens rechts onder naar het synchronisatie menu om te zien of je commits van andere collega’s nog moet binnenhalen en je eigen commit klaar staat.
+ * !img files/images/GitUserGuide/5MiniMenuExample.png 
+ * In bovenstaande voorbeeld zijn er 6 commits van andere collega’s die zij al naar het project in VSTS hebben verstuurd en nog overgehaald moeten worden uit VSTS. Er staat 1 commit klaar die nog naar VSTS verstuur moet worden.
+ * Om je eigen commit naar VSTS te versturen moet je volgens Git altijd eerst bestanden overhalen. Om dit te doen klik in het ‘…’ menu op Pull
+ * !img files/images/GitUserGuide/6pullMenuExample.png
+ * Je hebt nu gecontroleerd of er bestanden waren om over te halen uit VSTS. Afhankelijk van de situate krijg je geen bericht of een melding dat er een merge conflict is.
