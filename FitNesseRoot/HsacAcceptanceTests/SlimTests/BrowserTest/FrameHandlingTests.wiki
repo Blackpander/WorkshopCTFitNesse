@@ -1,6 +1,0 @@
----
-Help: Tests from frames and iframes
-Suite
-Suites
----
-!contents -R2 -g -p -f -h
