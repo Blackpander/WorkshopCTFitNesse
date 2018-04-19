@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20180127</FitNesseVersion>
+  <rootPath>FrontPage.WerkenBijKnab.WerkenBijKnabScript</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <date>2018-04-19T11:32:40+02:00</date>
+    <runTimeInMillis>652</runTimeInMillis>
+    <content></content>
+    <relativePageName>SuiteSetUp</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='nl.hsac.fitnesse.fixture'}</instruction>
+        <slimResult>pass(nl.hsac.fitnesse.fixture)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>nl.hsac.fitnesse.fixture</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='nl.hsac.fitnesse.fixture.slim'}</instruction>
+        <slimResult>pass(nl.hsac.fitnesse.fixture.slim)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>nl.hsac.fitnesse.fixture.slim</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_2', instruction='import', path='nl.hsac.fitnesse.fixture.slim.web'}</instruction>
+        <slimResult>pass(nl.hsac.fitnesse.fixture.slim.web)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>nl.hsac.fitnesse.fixture.slim.web</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_1_0', instruction='make', instanceName='library1', className='StopTestFicture', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>library_1_0</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Could not invoke constructor for StopTestFicture[0]</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='library_1_1', instruction='make', instanceName='library2', className='BrowserTest', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>library_1_1</instructionId>
+                              <type>ConstructionExpectation</type>
+                                        <evaluationMessage>nl.hsac.fitnesse.fixture.slim.StopTestException: Cannot use Selenium before configuring how to start a driver (for instance using SeleniumDriverSetup)</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_0', instruction='make', instanceName='scriptTableActor', className='SeleniumDriverSetup', args=[]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_2_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_1', instruction='call', instanceName='scriptTableActor', methodName='startDriverFor', args=[chrome]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_2_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_2_2', instruction='call', instanceName='scriptTableActor', methodName='driverDescription', args=[]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_2_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ShowActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_0', instruction='call', instanceName='scriptTableActor', methodName='setBrowserSizeToMaximum', args=[]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_3_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_1', instruction='call', instanceName='scriptTableActor', methodName='secondsBeforeTimeout', args=[10]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_3_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_3_2', instruction='call', instanceName='scriptTableActor', methodName='setImplicitWautForAngularTo', args=[true]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_3_2</instructionId>
+                    <col>0</col>
+                              <row>3</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2018-04-19T11:32:41+02:00</date>
+    <runTimeInMillis>25</runTimeInMillis>
+    <content></content>
+    <relativePageName>WerkenBijKnabScript</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='open', args=[&lt;a href="https://google.nl"&gt;https://google.nl&lt;/a&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>The instance scriptTableActor.open. does not exist</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2018-04-19T11:32:41+02:00</date>
+    <runTimeInMillis>28</runTimeInMillis>
+    <content>&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.WerkenBijKnab.ScenarioLibrary"&gt;.FrontPage.WerkenBijKnab.ScenarioLibrary&lt;/a&gt; &lt;a href="FrontPage.WerkenBijKnab.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;nl.hsac.fitnesse.fixture&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;nl.hsac.fitnesse.fixture.slim&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;nl.hsac.fitnesse.fixture.slim.web&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;library&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;stop test ficture &lt;span class="error"&gt;Could not invoke constructor for StopTestFicture[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;browser test &lt;span class="fail"&gt;nl.hsac.fitnesse.fixture.slim.StopTestException: Cannot use Selenium before configuring how to start a driver (for instance using SeleniumDriverSetup)&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;selenium driver setup &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;start driver for &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;chrome&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;driver description&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="2"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td colspan="2"&gt;set browser size to maximum &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor7"&gt;
+		&lt;td&gt;seconds before timeout &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;10&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;set implicit waut for angular to &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;true&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.WerkenBijKnab.ScenarioLibrary"&gt;.FrontPage.WerkenBijKnab.ScenarioLibrary&lt;/a&gt; &lt;a href="FrontPage.WerkenBijKnab.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="2"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;open &lt;span class="error"&gt;The instance scriptTableActor.open. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://google.nl"&gt;https://google.nl&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Included page: &lt;a href="FrontPage.WerkenBijKnab.ScenarioLibrary"&gt;.FrontPage.WerkenBijKnab.ScenarioLibrary&lt;/a&gt; &lt;a href="FrontPage.WerkenBijKnab.ScenarioLibrary?edit&amp;amp;redirectToReferer=true&amp;amp;redirectAction=" class="edit"&gt;(edit)&lt;/a&gt;&lt;/p&gt;
+	&lt;div&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"/&gt;&lt;ul class="toc1"/&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;selenium driver setup&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="exception closed"&gt;
+		&lt;td class="fail"&gt;show&lt;/td&gt;
+		&lt;td class="fail"&gt;run summary&lt;/td&gt;
+	&lt;/tr&gt;&lt;tr class="exception-detail closed-detail"&gt;&lt;td colspan="2"&gt;&lt;pre&gt;__EXCEPTION__:ABORT_SLIM_TEST:nl.hsac.fitnesse.fixture.slim.StopTestException: Cannot use Selenium before configuring how to start a driver (for instance using SeleniumDriverSetup)
+	at nl.hsac.fitnesse.fixture.util.selenium.driverfactory.DriverManager.getSeleniumHelper(DriverManager.java:43) [file:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/]
+	at nl.hsac.fitnesse.fixture.Environment.getSeleniumHelper(Environment.java:600) [file:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/]
+	at nl.hsac.fitnesse.fixture.slim.web.SeleniumDriverSetup.getHelper(SeleniumDriverSetup.java:319) [file:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/]
+	at nl.hsac.fitnesse.fixture.slim.web.SeleniumDriverSetup.runSummary(SeleniumDriverSetup.java:196) [file:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [n/a]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [n/a]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [n/a]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) [rt.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:221) [fitnesse-standalone.jar]
+	at nl.hsac.fitnesse.fixture.slim.SlimFixture.invoke(SlimFixture.java:54) [file:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/]
+	at nl.hsac.fitnesse.fixture.slim.SlimFixture.aroundSlimInvoke(SlimFixture.java:34) [file:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [n/a]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [n/a]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [n/a]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) [rt.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:221) [fitnesse-standalone.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.callMethod(DefaultInteraction.java:204) [fitnesse-standalone.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.invokeMethod(DefaultInteraction.java:188) [fitnesse-standalone.jar]
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.findAndInvoke(DefaultInteraction.java:166) [fitnesse-standalone.jar]
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:18) [fitnesse-standalone.jar]
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:18) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:139) [fitnesse-standalone.jar]
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:112) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35) [fitnesse-standalone.jar]
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43) [fitnesse-standalone.jar]
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:82) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:75) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:62) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:47) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.handle(SlimService.java:169) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:177) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.accept(SlimService.java:139) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:92) [fitnesse-standalone.jar]
+	at fitnesse.slim.SlimService.main(SlimService.java:57) [fitnesse-standalone.jar]&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td colspan="2"&gt;stop driver &lt;span class="ignore"&gt;Test not run&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SuiteTearDown</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='SeleniumDriverSetup', args=[]}</instruction>
+        <slimResult>pass(selenium driver setup)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>selenium driver setup</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='runSummary', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>fail</status>
+                    <instructionId>scriptTable_0_1</instructionId>
+                              <type>ShowActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_2', instruction='call', instanceName='scriptTableActor', methodName='stopDriver', args=[]}</instruction>
+        <slimResult>ignore(Test not run)</slimResult>
+                <expectation>
+                    <status>ignore</status>
+                    <instructionId>scriptTable_0_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Test not run</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp /Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fitnesse-standalone.jar:fixtures:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/commons-logging-1.2.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/slf4j-simple-1.7.25.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/json-path-2.4.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/jsr305-1.3.9.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/phantomjsdriver-1.4.4.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/diff-1.1.11.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/gson-2.8.2.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/slf4j-api-1.7.25.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/httpcore-4.4.9.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-api-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/httpclient-4.5.5.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/byte-buddy-1.7.9.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/cglib-nodep-3.2.6.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/error_prone_annotations-2.1.3.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/guava-23.6-jre.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/commons-cli-1.2.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-opera-driver-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/jcl-over-slf4j-1.7.25.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/rhino-1.7R5.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/snakeyaml-1.19.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/okhttp-3.9.1.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-safari-driver-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-java-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/json-smart-2.3.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/jackson-databind-2.4.2.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/galen-core-2.3.6.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-support-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/jackson-core-2.4.2.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-firefox-driver-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/commons-io-2.4.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-ie-driver-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/checker-compat-qual-2.0.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/asm-5.0.4.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/commons-codec-1.10.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/galen-rainbow4j-2.3.6.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-chrome-driver-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/j2objc-annotations-1.1.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/commons-exec-1.3.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/freemarker-2.3.27-incubating.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/accessors-smart-1.2.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/httpmime-4.5.5.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/jackson-annotations-2.4.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/animal-sniffer-annotations-1.14.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/commons-net-3.6.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/commons-lang3-3.7.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/commons-text-1.2.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-edge-driver-3.11.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/okio-1.13.0.jar:/Users/mvansplunter/Documents/GitHub/WorkshopCTFitNesse/fixtures/selenium-remote-driver-3.11.0.jar fitnesse.slim.SlimService 58012</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>3</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1215</totalRunTimeInMillis>
+</testResults>
+

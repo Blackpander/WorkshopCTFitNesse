@@ -1,1 +1,7 @@
 !contents
+
+!path fixtures
+!path fixtures/*.jar
+
+!define slim.port {0}
+!define TEST_SYSTEM {slim}
