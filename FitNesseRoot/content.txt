@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-!contents
-=======
 !contents -R2 -g -p -f -h
->>>>>>> 100dae838e2ab79c94a0a622fb5606c1597bf511
 
 !path fixtures
 !path fixtures/*.jar
 
 !define slim.port {0}
-<<<<<<< HEAD
 !define TEST_SYSTEM {slim}
-=======
-!define TEST_SYSTEM {slim} 
->>>>>>> 100dae838e2ab79c94a0a622fb5606c1597bf511

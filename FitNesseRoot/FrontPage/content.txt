@@ -1,27 +1,6 @@
-<<<<<<< HEAD
 !1 Welkom bij de !-FitNesse-!-workshop!
 
 |'''De Werken bij Knab-suite'''                                                                       |
 |[[Mijn eerste suite][.FrontPage.WerkenBijKnab]]|''Hier kun je beginnen met het maken van je script.''|
 
 !note Release ${FITNESSE_VERSION}
-=======
-!1 Welkom bij de [[!-FitNesse-! Workshop][http://fitnesse.org/]]!
-# Here is a good place to add your first page (WikiWord). For example, MyTopLevelApplicationPage
-
-Deze versie van !-FitNesse-! maakt gebruik van de HSAC-module, een uitbreiding van !-FitNesse-!. De documentatie over de HSAC-module kan op de pagina HsacExamples gevonden worden.
- 
-Laten we aan de slag gaan om je eerste testpagina te maken. Let dus goed op om je eerste succesvolle test te schrijven.
-Let op het gebruiken van [[!-WikiWord-!][.FitNesse.UserGuide.FitNesseWiki.WikiWord]] bij het schrijven van je titels van je pagina's.
-
-|'''Om nog meer te lezen...'''                                                                                    |
-|Alle !-FitNesse-! documentatie die hieronder te vinden is geschreven in het Engels. Wij hebben ook onze eigen documentatie geschreven, die vind je in de knop Documentatie.                                                                                    |
-|[[User Guide][.FitNesse.UserGuide]]                           |''De naam spreekt voor zich.''|
-|[[A Two-Minute Example][.FitNesse.UserGuide.TwoMinuteExample]]|''Een kort voorbeeld. Leesmateriaal voor als je erin interesse hebt.''   |
-|[[Acceptance Tests][.FitNesse.SuiteAcceptanceTests]]          |''!-FitNesse-!'s Acceptance Tests.''   |
-|[[Release Notes][.FitNesse.ReleaseNotes]]                     |''De nieuwste toevoegingen van !-FitNesse-!.'' |
-
-!note Release ${FITNESSE_VERSION}
-
-!contents -R2 -g -p -f -h
->>>>>>> 100dae838e2ab79c94a0a622fb5606c1597bf511
