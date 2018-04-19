@@ -9,7 +9,7 @@ Static
 Versions: no
 WhereUsed: no
 ---
-!3 Dit is de pagina waar je tips & tricks kunt vinden, die je kunnen helpen bij het scripten. Je wordt '''nadrukkelijk''' gevraagd hier niets aan te passen en/of te wijzigen. Als je dit wilt, kun je contact opnemen met Rens, Gert of Maikel. Als je hier iets mist, kun je contact opnemen met Rens van Honschooten. (email= Rens.VanHonschooten@vivat.nl)
+!3 Dit is de pagina waar je tips & tricks kunt vinden, die je kunnen helpen bij het scripten. 
 
 Hier worden de meest gebruikte instructies beschreven die je kunt gebruiken bij het scripten. 
 
@@ -18,8 +18,7 @@ Hier worden de meest gebruikte instructies beschreven die je kunt gebruiken bij 
 !*****> Deel 1: Wat is !-FitNesse-!?
 !4 [[Wat is !-FitNesse-!?][.Documentatie.WatIsFitnesse.Uitgelegd]]
 !4 [[Hoe start ik !-FitNesse-! op?][.Documentatie.WatIsFitnesse.FitnesseStarten]]
-!4 [[Wat is Git en hoe start ik Git op?][.Documentatie.GitUserGuide]]
-!4 [[Bekijk ook de Vivat training voor !-FitNesse-!][http://siav21549.ins.local:${FITNESSE_PORT}/files/otherFormats/Training_FitNesse.pptx]]
+!4 [[Bekijk hier de !-FitNesse-! training die we bij Vivat hebben gegeven][http://localhost:${FITNESSE_PORT}/files/otherFormats/Training_FitNesse.pptx]]
 !4 [[Checklist voor !-FitNesse-!][.Documentatie.WatIsFitnesse.ChecklistFitnesse]]
 !4 [[!-FitNesse-! Best Practices][.Documentatie.WatIsFitnesse.BestPractice]]
 **********!
@@ -47,7 +46,4 @@ Voor alle functionaliteiten klik hieronder. '''Let op!''' Deze zijn niet uitgele
 .HsacAcceptanceTests
 .HsacExamples
 .FitNesse.UserGuide.FitNesseWiki.MarkupLanguageReference
-Compacte FitNesse handleiding:.FitNesse.UserGuide.QuickReferenceGuide
-
-GRID: grid link
-Om te kijken of er (teveel) openstaande sessies op je node staan, [[klik hier][http://siav21549.ins.local:4444/grid/console]]. Als er te veel open staan, dien je de cmd prompt met je webdrivers te sluiten en opnieuw te starten op je Remote Desktop.
+Compacte !-FitNesse-! handleiding:.FitNesse.UserGuide.QuickReferenceGuide
