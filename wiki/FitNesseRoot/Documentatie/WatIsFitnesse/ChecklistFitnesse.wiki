@@ -1,0 +1,115 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+!1 Checklist !-FitNesse-! workspace
+Om aan de slag te kunnen met !-FitNesse-! zijn er een aantal dingen die gecontroleerd moeten worden. De verschillende controle of configuratie acties voor een eerste gebruik staan hieronder beschreven. 
+
+'''Remote desktop connection is zichtbaar in het startmenu'''
+Ga naar het startmenu op je laptop en typ ‘remote’. 
+!img files/images/checklist/stap_01.png
+
+Als het goed is heb je de mogelijkheid om een remote desktop connection op te zetten. Zo niet, zullen de beheer tools aangevraagd moeten worden voor op je laptop.
+
+'''Verbinding maken met de server is mogelijk'''
+Start het remote desktop connection programma en vul hier de servernaam in {JOUW !-ServerNaam-!}.ins.local:{Poortnummer} en klik op Connect.
+Voer nu als gebruikersnaam in ‘INS\personeelsnummer’ en je wachtwoord (die je ook gebruikt om bijvoorbeeld Vivat Webmail te openen en voor Office 365 gebruikt). 
+'''Tip: Zorg dat je een eigen wachtwoord hebt aangemaakt, je kunt op [[Service Now (link)][https://vivat.service-now.com/sp/]] de instructies vinden om je wachtwoord te wijzigen.'''
+!img files/images/checklist/stap_02.png
+Als het goed is kan je verbinding maken met de server en start na een tijdje alles op. Als dit niet het geval is zal je rechten moeten krijgen om verbinding te kunnen maken met de server.
+
+'''Je kan op internet vanaf de server'''
+Nu je ingelogd bent op de server kan je Google Chrome openen. 
+Start Chrome op en ga rechtsboven naar de settings. 
+Scroll vervolgens naar beneden en klik op advanced.
+Scroll wederom naar beneden en klik op Open proxy settings
+!img files/images/checklist/stap_03.png
+Klik vervolgens in het menu dat vervolgens verschijnt op Connections > LAN settings
+Vink de twee onderste checkboxes aan en vul peopleproxy.ins.local in als address
+!img files/images/checklist/stap_04.png
+!*****> Klik op Advanced en vul bij Exceptions het volgende in 
+10.*;145.221.*;192.168.*;192.9.200.*;196.242.134.205;198.128.179.220;localhost;*.local;*.srg;id.vivatverzekeringen.nl;*.id.vivatverzekeringen.nl;autodiscover.*.nl;autodiscover-*.outlook.com;lyncdiscover.*;lyncdiscoverinternal.*;ucaccess03.*;ucaccess04.*;ucdialin03.*;ucdialin04.*;ucmeet03.*;ucmeet04.*;ucweb03ext.*;ucweb04ext.*;sip.*;sipinternal.*;sipexternal.*;*admin.zwitserleven.nl;*MZP.zwitserleven.nl;tst-biz.zwitserleven.nl;acc-biz.zwitserleven.nl;prd-biz.zwitserleven.nl;tst-bizdp.zwitserleven.nl;acc-bizdp.zwitserleven.nl;tst-ipensioen.zwitserleven.nl;acc-ipensioen.zwitserleven.nl;prd-ipensioen.zwitserleven.nl;ipensioen.zwitserleven.nl;tst-mwp.zwitserleven.nl;acc-mwp.zwitserleven.nl;prd-mwp.zwitserleven.nl;tst-proxy.zwitserleven.nl;acc-proxy.zwitserleven.nl;prd-proxy.zwitserleven.nl;zinfo;zinfo.zwitserleven.nl;ZLpasswordchange.zwitserleven.nl;claim.dierzorg.*;pkgprd;online.reaal.nl;secure.reaal.nl;*.web.axa.nl;pkg*.zwitserleven.nl;hybrid.vivat.nl;sts.vivat.nl;Home.Office.com;Portal.Office.com;agent.office.net;www.office.com;outlook.office365.com;Login.windows.net;clientconfig.microsoftonline-p.net;device.login.microsoftonline.com;login.microsoft.com;logincert.microsoftonline.com;loginex.microsoftonline.com;login-us.microsoftonline.com;login.microsoftonline-p.com;nexus.microsoftonline-p.com;*.svc.ms;stamp2.login.microsoftonline.com;signup.microsoft.com;hip.microsoftonline-p.net;hipservice.microsoftonline.com;api.login.microsoftonline.com;*.microsoftonline.com;smtp.office365.com;*.outlook.office.com;*.Lync.com;vivatins.sharepoint.com;vivatins-my.sharepoint.com;vivatins-files.sharepoint.com;vivatins-myfiles.sharepoint.com;*.protection.outlook.com;*.officeapps.live.com;www.outlook.com;vivat-stg2.pegacloud.io;
+**********!
+!img files/images/checklist/stap_05.png
+Klik vervolgens op ok.
+
+Als het goed is kan je nu op internet vanaf de server. Zo niet controleer dan of je precies dezelfde instellingen hebt als hierboven weergegeven.
+
+'''Je kan microsoft websites benaderen'''
+Open Google Chrome en ga naar 
+https://vivatins.visualstudio.com/
+
+Indien je onderstaande scherm te zien krijgt, volg dan de onderstaande stappen/
+!img files/images/checklist/stap_06.png 
+
+Ga naar op de server naar C:\Beheer en dubbelklik op BaltimoreRoot.cer
+!img files/images/checklist/stap_07.png
+
+Klik vervolgens op install certificate.
+!img files/images/checklist/stap_08.png
+
+Selecteer Current user en klik op next.
+!img files/images/checklist/stap_09.png
+ 
+Selecteer vervolgens Place all certificates in het following store en klik op browse.
+!img files/images/checklist/stap_10.png
+
+Selecteer vervolgens Trusted Root Certification Authorities en klik op Ok
+!img files/images/checklist/stap_11.png
+
+Klik vervolgens op next en Finish
+!img files/images/checklist/stap_12.png
+ 
+Klik vervolgens bij de waarschuwing op Yes
+!img files/images/checklist/stap_13.png
+ 
+Klik ten slotte op Ok
+
+Sluit Google Chrome af en start Chrome vervolgens weer op.
+Als het goed is kan je https://vivatins.visualstudio.com/ nu wel bereiken. Er staat nu Secure en https is groen.
+!img files/images/checklist/stap_14.png
+
+Je kan het Visual Studio Team Services project benaderen 
+Open Google Chrome op de server en ga naar https://vivatins.visualstudio.com/
+
+Indien er om een login gevraagd wordt, geeft hier je emailadres op en het wachtwoord (waarmee je ook met de server verbinding maakte)
+
+Als het goed is kan je de website benaderen.
+
+'''Je kan je eigen Git credentials aanmaken'''
+Ga naar https://vivatins.visualstudio.com/_git/PROJECTNAAM en klik rechtsboven op Clone.
+!img files/images/checklist/stap_15.png
+ 
+Klik in het menu vervolgens op Generate Git credentials
+!img files/images/checklist/stap_16.png
+
+Geef een alias en password op en klik op Save.
+Gebruik vervolgens deze alias en password vanuit visual studio code (bij de volgende stap).
+
+
+'''Je kan het Visual Studio Team Services project vanuit Visual Studio Code benaderen'''
+Open Visual Studio Code op de server.
+!img files/images/checklist/stap_17.png
+ 
+Druk op je f1 functie toets op je toetsenbord (je zal bovenaan nu een klein menu zien verschijnen). Typ vervolgen ‘clone’ en klik deze aan.
+!img files/images/checklist/stap_18.png
+ 
+Vul vervolgens als er om een Repository URL gevraag wordt onderstaande in, waar je alias en wachtwoord vervangt voor de eerder aangemaakte git credentials.
+https://ALIAS:WACHTWOORD@vivatins.visualstudio.com/_git/PROJECTNAAM
+!img files/images/checklist/stap_19.png
+
+Vul vervolgen D:\Testautomation\projectnaam\voornaam in. 
+Dit wordt de locatie waar je eigen kopie (=clone) van alles van het project dat in Visual Studio Team Services staat naar toe gekopieerd gaat worden op de server. De mappen voor elke gebruiker zijn reeds aangemaakt en hieronder weergeven.
+!img files/images/checklist/stap_20.png   
+
+Na op enter gedrukt te hebben, wordt er verbinding gemaakt en wordt er een username gevraagd. In eerste instantie krijg je een windows pop up waar je de logingegevens van VSTS. Geef je emailadres op en let erop dat je ook hoofdletters niet vergeet. Druk vervolgens op enter 
+!img files/images/checklist/stap_21.png   
+
+Als het goed is wordt nu een kopie gemaakt en krijg je naar een tijdje de mogelijkheid om op Open Repository te klikken. Klik hierop om deze te openen. Je kan nu in je C:Testautomation/voornaam zien dat de map nu gevuld is. Je heb nu alle voorbereiding erop zitten!

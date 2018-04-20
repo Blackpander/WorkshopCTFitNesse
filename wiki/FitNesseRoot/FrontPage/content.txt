@@ -1,0 +1,6 @@
+!1 Welkom bij de !-FitNesse-!-workshop!
+
+|'''De Werken bij Knab-suite'''                                                                       |
+|[[Mijn eerste suite][.FrontPage.WerkenBijKnab]]|''Hier kun je beginnen met het maken van je script.''|
+
+!note Release ${FITNESSE_VERSION}

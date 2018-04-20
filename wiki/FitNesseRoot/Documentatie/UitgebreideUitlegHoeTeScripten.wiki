@@ -1,0 +1,49 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+!3 Dit is de pagina waar je tips & tricks kunt vinden, die je kunnen helpen bij het scripten. 
+
+Hier worden de meest gebruikte instructies beschreven die je kunt gebruiken bij het scripten. 
+
+!3 Hoofdstukken:
+
+!*****> Deel 1: Wat is !-FitNesse-!?
+!4 [[Wat is !-FitNesse-!?][.Documentatie.WatIsFitnesse.Uitgelegd]]
+!4 [[Hoe start ik !-FitNesse-! op?][.Documentatie.WatIsFitnesse.FitnesseStarten]]
+!4 [[Bekijk hier de !-FitNesse-! training die we bij Vivat hebben gegeven][http://localhost:${FITNESSE_PORT}/files/otherFormats/Training_FitNesse.pptx]]
+!4 [[Checklist voor !-FitNesse-!][.Documentatie.WatIsFitnesse.ChecklistFitnesse]]
+!4 [[!-FitNesse-! Best Practices][.Documentatie.WatIsFitnesse.BestPractice]]
+**********!
+
+!*****> Deel 2: Scripten algemeen
+!4 [[Hoe schrijf ik een script?][.Documentatie.UitgebreideUitlegHoeTeScripten.ScriptSchrijven]]
+!4 [[Welke instructies kan ik gebruiken in !-FitNesse-!?][.Documentatie.UitgebreideUitlegHoeTeScripten.ScriptInstructies]]
+!4 [[Scripten met het zoeken van woorden op basis van Heuristiek][.Documentatie.UitgebreideUitlegHoeTeScripten.Heuristiek]]
+!4 [[Scripten met het zoeken van onderdelen op basis van ID's][.Documentatie.UitgebreideUitlegHoeTeScripten.ZoekenMetIds]]
+!4 [[Scripten met het gebruiken van XPath][.Documentatie.UitgebreideUitlegHoeTeScripten.ZoekenMetXpath]]
+!4 [[Best practices tijdens het scripten][.Documentatie.UitgebreideUitlegHoeTeScripten.BestPractices]]
+!4 [[!-FitNesse CheatSheet-!][.Documentatie.UitgebreideUitlegHoeTeScripten.CheatSheet]]
+!4 [[Hoe schrijf ik notities in mijn !-FitNesse-! scripts?][.Documentatie.UitgebreideUitlegHoeTeScripten.HetSchrijvenVanNotities]]
+**********!
+
+!*****> Deel 3: Specifieke functies van !-FitNesse-!
+!4 [[!-FitNesse-! functies met cijfers][.Documentatie.UitgebreideUitlegHoeTeScripten.SymbolSamples.FunctiesMetCijfers]]
+!4 [[!-FitNesse-! functies met tekst][.Documentatie.UitgebreideUitlegHoeTeScripten.SymbolSamples.FunctiesMetTekst]]
+!4 [[!-FitNesse-! functies met het genereren van data][.Documentatie.UitgebreideUitlegHoeTeScripten.SymbolSamples.FunctiesMetHetGenererenVanEenDatum]]
+!4 [[Stukken code/gehele script verbergen/weergeven in !-FitNesse-!][.Documentatie.UitgebreideUitlegHoeTeScripten.SymbolSamples.HetVerbergenVanStukkenScript]]
+!4 [[Werken met variabelen in !-FitNesse-!][.Documentatie.UitgebreideUitlegHoeTeScripten.SymbolSamples.WerkenMetVariabelenInFitnesse]]
+**********!
+
+Voor alle functionaliteiten klik hieronder. '''Let op!''' Deze zijn niet uitgelegd in het Nederlands.
+.HsacAcceptanceTests
+.HsacExamples
+.FitNesse.UserGuide.FitNesseWiki.MarkupLanguageReference
+Compacte !-FitNesse-! handleiding:.FitNesse.UserGuide.QuickReferenceGuide

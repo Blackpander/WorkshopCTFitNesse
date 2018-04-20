@@ -1,0 +1,103 @@
+---
+Edit: no
+Files: no
+Properties: no
+RecentChanges: no
+Refactor: no
+Search: no
+Static
+Versions: no
+WhereUsed: no
+---
+Middels XPath kun je zeer specifiek zoeken op een bepaald element. Het mooie aan XPath is dat als je het goed geschreven hebt, het met hoge waarschijnlijkheid nog steeds werkt na een update op de website die je aan het testen bent. 
+
+!4 '''Xpath'''
+XPath (XML Path taal of XML Path Language) is een querytaal voor het adresseren van onderdelen van XML-documenten. Het is een compacte taal die niet in XML-syntaxis is opgesteld.
+Oorspronkelijk gemotiveerd door de wens om een gemeenschappelijke syntaxis en model te ontwikkelen voor XPointer en XSL, is XPath snel door XML-ontwikkelaars geaccepteerd als een soort kleine querytaal.
+Met XPath kan men heel specifieke informatie opvragen uit XML-documenten, zoals de informatie in de bladeren van de boomstructuur, maar ook deelpaden kunnen worden bevraagd.
+De notatie van XPath is compact, en geschikt om uitgedrukt te worden in XML-attributen. Een typisch XPath-expressie is een Location Path, dat bestaat uit een string van elementen of attributen, gescheiden door forward slashes ("/"), wat veel weg heeft van een pad in een bestandssysteem. XPath ondersteunt ook ingebouwde functies, filters, toegang tot gebonden variabelen, en axis specifiers.
+Dankzij deze eenvoudige en compacte notatie wijze word XPath ook gebruikt binnen verschillende testtooling, zoals Selenium om een locatie van een element te bepalen. Als tester zul je het meeste met deze implementatie van XPath te maken hebben.
+
+!img files/otherFormats/XPath1.jpg
+
+XPath Syntax
+XPath bevat het pad van het element dat op een webpagina staat. Standaard syntax voor het maken van XPath is.
+XPath = // tagname [@ attribute = 'value'] 
+
+ * //: Selecteer huidige node/root.
+ * Tagname: Tagname van het bepaalde node/root.
+ * @: Selecteer attribuut.
+ * Attribuut: Attribuut naam van het node/root.
+ * Waarde: waarde van het attribuut
+
+Om het element op webpagina's nauwkeurig te vinden, zijn er verschillende typen locators:                                             
+|XPath Locators    |Vind verschillende elementen op de webpagina                                                                       |
+|ID kaart          |Om het element te vinden via ID van het element                                                                    |
+|Naam van de klasse|Om het element te vinden volgens de Classname van het element                                                      |
+|Naam              |Om het element op naam van het element te vinden                                                                   |
+|Link tekst        |Om het element te vinden via de tekst van de link                                                                  |
+|XPath             |XPath vereist om het dynamische element te vinden en te verplaatsen tussen verschillende elementen van de webpagina|
+|CSS pad           |CSS-pad vindt ook elementen die geen naam, klas of ID hebben.                                                      |
+
+!2 Soorten X-pad
+Er zijn twee typen XPath:
+ * Absolute XPath.
+ * Relatieve XPath.
+
+!3 '''Absolute XPath'''
+'''Let op! Het gebruiken van absolute xpath is niet best practice. We schrijven dit hier alleen ter verduidelijking.'''
+
+Het is de directe manier om het element te vinden, maar het nadeel van de absolute XPath is dat als er veranderingen plaatsvinden in het pad van het element, de XPath veranderd. Het belangrijkste kenmerk van XPath is dat het begint met de single forward slash (/), wat betekent dat je het element van het root node selecteert. Hieronder een voorbeeld van een absolute XPath-expressie van het element dat in het onderstaande scherm wordt weergegeven.
+
+'''Absolute xpath''':
+/ html / body / div [1] / deel / div [1] / div / div / div / div [1] / div / div / div / div / div [3] / div [1] / div / h4 [1 ] / b 
+
+!img files/otherFormats/XPath2.jpg
+
+!3 '''Relatieve xpath'''
+Voor Relative XPath begint het pad vanaf het midden van de HTML DOM structuur. Het begint met de dubbele forward slash (//), wat betekent dat het op elk gewenst moment op het web op de webpagina kan zoeken. Zo kan je XPath starten vanuit het midden van de HTML DOM structuur en hoeft niet lange XPath te schrijven. Hieronder vindt u een voorbeeld van een relatieve XPath-expressie van hetzelfde element dat in het onderstaande scherm wordt weergegeven. Dit is het gebruikelijke formaat dat wordt gebruikt om element te vinden via een relatieve XPath.
+
+'''Relatieve xpath''': 
+!-//*[@class=featured-box']//*[tekst()='Testen']-!
+
+!img files/otherFormats/XPath3.jpg
+
+!*****> Voorbeeld 1 Relatieve XPath
+xpath=//*[@id="RULE_KEY"]/following::a[contains(text(),'Vivat')]
+
+Ontleden XPath                                                                                                                             
+|//         |Altijd hiermee starten                                                                                                       |
+|*          |Hiermee wordt door alle elementen gezocht                                                                                    |
+|[@id]      |Hiermee kunnen specifieke id’s geselecteerd                                                                                  |
+|/          |Het starten van een nieuw deel XPath, 2 commando’s samenvoegen                                                               |
+|following  |Dit worden ‘axes’ genoemd. In dit geval wordt alles gezocht in het document, wat na de sluiting van het vorige element staat.|
+|a          |Dit is een hyperlink, zonder href attribuut.                                                                                 |
+|[contains] |Binnen de beschikbare <a> elementen, wordt gezocht op een element die een specifiek woord bevat.                             |
+|(text(),’’)|De instructie hierboven, kan niet worden uitgevoerd zonder specificatie wat er in de XPath gezocht moet worden.              |
+
+Om het voorbeeld uit te leggen. 
+
+In XPath wordt een instructie uitgevoerd om een hyperlink te zoeken, die het woord Vivat bevat. Dit moet gezocht worden in een specifieke hyperlink, die volgt op een specifieke id. Dit id kan vervolgens in het gehele document gevonden worden.
+**********!
+
+!*****> Voorbeeld 2 Relatieve XPath:
+$geslacht = 
+xpath=//span[text()="@lastname"]/ancestor::table[1]/descendant::tr[@pl_index=
+"@rownumber"]/descendant::td[1]/div
+
+Hiermee maken we een variabele aan, die vervolgens gevuld gaat worden met de tekst die we vinden middels de XPath instructie. In een later moment, is het mogelijk om deze variabele weer te gebruiken om bijvoorbeeld te controleren of de gevonden tekst overeenkomt in een later scherm.
+
+|//                        |de start van de XPath instructie                                                                                                                                                                                   |
+|span                      |hiermee worden inline-elementen in een document gegroepeerd                                                                                                                                                        |
+|[text()=""]/              |dit is een instructie om op zoek te gaan naar een specifiek stukje tekst, binnen de span.                                                                                                                          |
+|@lastname                 |dit is verwijzing in de table template functie in FitNesse. Hiermee haalt FitNesse de tekst op in de tabel die op de plaats van lastname staat.                                                                    |
+|/                         |hiermee wordt een nieuw xpath instructie gestart.                                                                                                                                                                  |
+|ancestor                  |dit is een andere ‘axis’ binnen XPath. Met deze instructie wordt binnen alle hogerop gelegen elementen gezocht, ten opzichte van het huidige element.                                                              |
+|table[1]                  |met bovenstaande instructie gecombineerd met deze, geven we in XPath aan dat we in de tabel willen zoeken. De [1] geeft aan dat we de eerste tabel willen uitlezen, mochten er meerdere tabellen zijn op de pagina.|
+|/                         |hiermee wordt een nieuw xpath instructie gestart.                                                                                                                                                                  |
+|descendant                |met de eerste 2 instructies gecombineerd met de huidige, bakenen we als het ware de zoekopdracht af.                                                                                                               |
+|tr[@pl_index="@rownumber"]|er wordt binnen de tabel gespecificeerd binnen welke rij gezocht moet worden. Dit is middels @rownumber mogelijk. In de table template kan aangegeven worden op welke rij specifiek gezocht moet worden.           |
+|/                         |hiermee wordt een nieuw xpath instructie gestart.                                                                                                                                                                  |
+|descendant                |Het nogmaals afbakenen van de zoekopdracht. De zoekopdracht wordt gezet binnen de rij van de tabel.                                                                                                                |
+|td[1]/div                 |dit geeft de plaats aan van het element wat gezocht moet worden.                                                                                                                                                   |
+**********!                                                                                                                                                                                                                                   
