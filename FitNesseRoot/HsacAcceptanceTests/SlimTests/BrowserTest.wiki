@@ -1,9 +1,0 @@
----
-Help: Tests for BrowserTest
-Suite
-Suites
-SymbolicLinks
-  SuiteTearDown: .HsacExamples.SlimTests.BrowserTests.SuiteTearDown
-Test: no
----
-!contents -R2 -g -p -f -h
