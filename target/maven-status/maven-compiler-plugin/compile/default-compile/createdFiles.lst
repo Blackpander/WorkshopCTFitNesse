@@ -7,7 +7,6 @@ nl/hsac/fitnesse/fixture/util/selenium/by/ListItemBy$Numbered.class
 nl/hsac/fitnesse/fixture/util/XPathHelper.class
 nl/hsac/fitnesse/fixture/slim/CompareFixture$1.class
 nl/hsac/fitnesse/fixture/util/LineEndingHelper.class
-nl/hsac/fitnesse/sample/GetWeatherFixture.class
 nl/hsac/fitnesse/fixture/util/selenium/by/ElementBy$Partial.class
 nl/hsac/fitnesse/junit/reportmerge/TestReportFactory.class
 nl/hsac/fitnesse/fixture/util/MapHelper.class
@@ -219,6 +218,7 @@ nl/hsac/fitnesse/fixture/util/selenium/by/ConstantBy.class
 nl/hsac/fitnesse/fixture/util/selenium/caching/ObjectCacheMap.class
 nl/hsac/fitnesse/fixture/util/NamespaceContextImpl.class
 nl/hsac/fitnesse/fixture/slim/HttpTest$5.class
+nl/hsac/fitnesse/sample/AddIntegerFixture.class
 nl/hsac/fitnesse/fixture/util/selenium/by/ContainerBy$Heuristic.class
 nl/hsac/fitnesse/fixture/util/ReflectionHelper.class
 nl/hsac/fitnesse/fixture/slim/XmlHttpTest$1.class

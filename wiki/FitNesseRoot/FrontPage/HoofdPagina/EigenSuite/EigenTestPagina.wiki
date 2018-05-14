@@ -1,0 +1,5 @@
+---
+Test
+---
+|script                    |
+|open|https://www.google.nl|

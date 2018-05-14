@@ -1,5 +1,0 @@
----
-Suite
----
-!1 Test suite Werken Bij Knab
-!contents -R2 -g -p -f -h

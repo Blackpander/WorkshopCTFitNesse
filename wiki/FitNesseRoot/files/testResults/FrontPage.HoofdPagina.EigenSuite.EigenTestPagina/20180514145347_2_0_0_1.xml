@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20180127</FitNesseVersion>
+  <rootPath>FrontPage.HoofdPagina.EigenSuite.EigenTestPagina</rootPath>
+    <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2018-05-14T14:53:48+02:00</date>
+    <runTimeInMillis>3096</runTimeInMillis>
+    <content></content>
+    <relativePageName>SuiteSetUp</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='import_0_0', instruction='import', path='nl.hsac.fitnesse.fixture.slim.web'}</instruction>
+        <slimResult>pass(nl.hsac.fitnesse.fixture.slim.web)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_0</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>nl.hsac.fitnesse.fixture.slim.web</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='import_0_1', instruction='import', path='nl.hsac.fitnesse.fixture.FixtureDebugTest'}</instruction>
+        <slimResult>pass(nl.hsac.fitnesse.fixture.FixtureDebugTest)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>import_0_1</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ImportExpectation</type>
+                                        <evaluationMessage>nl.hsac.fitnesse.fixture.FixtureDebugTest</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_0', instruction='make', instanceName='scriptTableActor', className='SeleniumDriverSetup', args=[]}</instruction>
+        <slimResult>pass(selenium driver setup)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>selenium driver setup</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_1', instruction='call', instanceName='scriptTableActor', methodName='startDriverFor', args=[chrome]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_1_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_1_2', instruction='call', instanceName='scriptTableActor', methodName='driverDescription', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_1_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ShowActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <date>2018-05-14T14:53:51+02:00</date>
+    <runTimeInMillis>11</runTimeInMillis>
+    <content></content>
+    <relativePageName>EigenTestPagina</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='call', instanceName='scriptTableActor', methodName='open', args=[&lt;a href="https://www.google.nl"&gt;https://www.google.nl&lt;/a&gt;]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <status>error</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                              <type>ScriptActionExpectation</type>
+                                        <evaluationMessage>Method open[1] not found in nl.hsac.fitnesse.fixture.slim.web.SeleniumDriverSetup.</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <result>
+    <counts>
+      <right>1</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2018-05-14T14:53:51+02:00</date>
+    <runTimeInMillis>101</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Import&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;nl.hsac.fitnesse.fixture.slim.web&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;nl.hsac.fitnesse.fixture.FixtureDebugTest&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;selenium driver setup&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;start driver for&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;chrome&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td&gt;driver description&lt;/td&gt;
+	&lt;td&gt;&lt;div&gt;&lt;pre&gt;org.openqa.selenium.chrome.ChromeDriver&lt;/pre&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th&gt;acceptInsecureCerts&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;acceptSslCerts&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;applicationCacheEnabled&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;browserConnectionEnabled&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;browserName&lt;/th&gt;&lt;td&gt;chrome&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;chrome&lt;/th&gt;&lt;td&gt;{chromedriverVersion=2.38.552518 (183d19265345f54ce39cbb94cf81ba5f15905011), userDataDir=/var/folders/nx/ptpnjc_j1wz3t8zgyxwqsvq80000gn/T/.org.chromium.Chromium.gP95xh}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;cssSelectorsEnabled&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;databaseEnabled&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;handlesAlerts&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;hasTouchScreen&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;javascriptEnabled&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;locationContextEnabled&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;mobileEmulationEnabled&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;nativeEvents&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;networkConnectionEnabled&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;pageLoadStrategy&lt;/th&gt;&lt;td&gt;normal&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;platform&lt;/th&gt;&lt;td&gt;MAC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;platformName&lt;/th&gt;&lt;td&gt;MAC&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;rotatable&lt;/th&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;setWindowRect&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;takesHeapSnapshot&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;takesScreenshot&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;unexpectedAlertBehaviour&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;unhandledPromptBehavior&lt;/th&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;version&lt;/th&gt;&lt;td&gt;66.0.3359.139&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;webStorageEnabled&lt;/th&gt;&lt;td&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="2"&gt;script&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor4"&gt;
+		&lt;td&gt;open &lt;span class="error"&gt;Method open[1] not found in nl.hsac.fitnesse.fixture.slim.web.SeleniumDriverSetup.&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;&lt;a href="https://www.google.nl"&gt;https://www.google.nl&lt;/a&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+&lt;br/&gt;&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;script&lt;/td&gt;
+		&lt;td&gt;&lt;span class="pass"&gt;selenium driver setup&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor9"&gt;
+		&lt;td&gt;show&lt;/td&gt;
+		&lt;td&gt;run summary&lt;/td&gt;
+	&lt;td&gt;null&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr class="slimRowColor8"&gt;
+		&lt;td colspan="2"&gt;&lt;span class="pass"&gt;stop driver&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>SuiteTearDown</relativePageName>
+            <instructions>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_0', instruction='make', instanceName='scriptTableActor', className='SeleniumDriverSetup', args=[]}</instruction>
+        <slimResult>pass(selenium driver setup)</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_0</instructionId>
+                    <col>1</col>
+                              <row>0</row>
+                    <type>ConstructionExpectation</type>
+                                        <evaluationMessage>selenium driver setup</evaluationMessage>
+                  </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_1', instruction='call', instanceName='scriptTableActor', methodName='runSummary', args=[]}</instruction>
+        <slimResult></slimResult>
+                <expectation>
+                    <instructionId>scriptTable_0_1</instructionId>
+                    <col>0</col>
+                              <row>1</row>
+                    <type>ShowActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+            <instructionResult>
+        <instruction>{id='scriptTable_0_2', instruction='call', instanceName='scriptTableActor', methodName='stopDriver', args=[]}</instruction>
+        <slimResult>pass()</slimResult>
+                <expectation>
+                    <status>pass</status>
+                    <instructionId>scriptTable_0_2</instructionId>
+                    <col>0</col>
+                              <row>2</row>
+                    <type>ScriptActionExpectation</type>
+                                      </expectation>
+              </instructionResult>
+          </instructions>
+      </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/bin/java -cp /Users/mvansplunter/Documents/GitHub/test/hsac-fitnesse-fixtures/wiki/fitnesse-standalone.jar:fixtures:/Users/mvansplunter/Documents/GitHub/test/hsac-fitnesse-fixtures/wiki/fixtures:/Users/mvansplunter/.m2/repository/org/fitnesse/fitnesse/20180127/fitnesse-20180127.jar:/Users/mvansplunter/.m2/repository/org/htmlparser/htmlparser/2.1/htmlparser-2.1.jar:/Users/mvansplunter/.m2/repository/org/htmlparser/htmllexer/2.1/htmllexer-2.1.jar:/Users/mvansplunter/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar:/Users/mvansplunter/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/mvansplunter/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/mvansplunter/.m2/repository/org/json/json/20151123/json-20151123.jar:/Users/mvansplunter/.m2/repository/com/googlecode/java-diff-utils/diffutils/1.3.0/diffutils-1.3.0.jar:/Users/mvansplunter/.m2/repository/org/apache/ant/ant/1.9.6/ant-1.9.6.jar:/Users/mvansplunter/.m2/repository/org/apache/ant/ant-launcher/1.9.6/ant-launcher-1.9.6.jar:/Users/mvansplunter/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.25/jcl-over-slf4j-1.7.25.jar:/Users/mvansplunter/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/mvansplunter/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar:/Users/mvansplunter/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/mvansplunter/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/mvansplunter/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/mvansplunter/.m2/repository/org/apache/httpcomponents/httpmime/4.5.5/httpmime-4.5.5.jar:/Users/mvansplunter/.m2/repository/org/freemarker/freemarker/2.3.28/freemarker-2.3.28.jar:/Users/mvansplunter/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar:/Users/mvansplunter/.m2/repository/org/apache/commons/commons-text/1.3/commons-text-1.3.jar:/Users/mvansplunter/.m2/repository/cglib/cglib-nodep/3.2.6/cglib-nodep-3.2.6.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-java/3.11.0/selenium-java-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-api/3.11.0/selenium-api-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.11.0/selenium-chrome-driver-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.11.0/selenium-edge-driver-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.11.0/selenium-firefox-driver-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.11.0/selenium-ie-driver-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.11.0/selenium-opera-driver-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.11.0/selenium-remote-driver-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.11.0/selenium-safari-driver-3.11.0.jar:/Users/mvansplunter/.m2/repository/org/seleniumhq/selenium/selenium-support/3.11.0/selenium-support-3.11.0.jar:/Users/mvansplunter/.m2/repository/net/bytebuddy/byte-buddy/1.7.9/byte-buddy-1.7.9.jar:/Users/mvansplunter/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mvansplunter/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mvansplunter/.m2/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar:/Users/mvansplunter/.m2/repository/com/google/guava/guava/23.6-jre/guava-23.6-jre.jar:/Users/mvansplunter/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/mvansplunter/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/mvansplunter/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/mvansplunter/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mvansplunter/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/mvansplunter/.m2/repository/com/squareup/okhttp3/okhttp/3.9.1/okhttp-3.9.1.jar:/Users/mvansplunter/.m2/repository/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar:/Users/mvansplunter/.m2/repository/com/codeborne/phantomjsdriver/1.4.4/phantomjsdriver-1.4.4.jar:/Users/mvansplunter/.m2/repository/com/galenframework/galen-core/2.3.6/galen-core-2.3.6.jar:/Users/mvansplunter/.m2/repository/com/galenframework/galen-rainbow4j/2.3.6/galen-rainbow4j-2.3.6.jar:/Users/mvansplunter/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/mvansplunter/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/Users/mvansplunter/.m2/repository/org/mozilla/rhino/1.7R5/rhino-1.7R5.jar:/Users/mvansplunter/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.4.2/jackson-core-2.4.2.jar:/Users/mvansplunter/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.4.2/jackson-databind-2.4.2.jar:/Users/mvansplunter/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.4.0/jackson-annotations-2.4.0.jar:/Users/mvansplunter/.m2/repository/com/sksamuel/diff/diff/1.1.11/diff-1.1.11.jar:/Users/mvansplunter/.m2/repository/com/jayway/jsonpath/json-path/2.4.0/json-path-2.4.0.jar:/Users/mvansplunter/.m2/repository/net/minidev/json-smart/2.3/json-smart-2.3.jar:/Users/mvansplunter/.m2/repository/net/minidev/accessors-smart/1.2/accessors-smart-1.2.jar:/Users/mvansplunter/.m2/repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar:/Users/mvansplunter/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/mvansplunter/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar:/Users/mvansplunter/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/mvansplunter/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar fitnesse.slim.SlimService 49725</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr>May 14, 2018 2:53:49 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 2.38.552518 (183d19265345f54ce39cbb94cf81ba5f15905011) on port 10733
+Only local connections are allowed.
+May 14, 2018 2:53:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>2</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>3933</totalRunTimeInMillis>
+</testResults>
+

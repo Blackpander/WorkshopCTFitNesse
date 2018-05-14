@@ -1,6 +1,8 @@
-!1 Welkom bij de !-FitNesse-!-workshop!
+!1 Welkom bij de tweede FitNesse-Workshop!
+!3 ''Vandaag gaan we aan de slag met een pipeline''
 
-|'''De Werken bij Knab-suite'''                                                                       |
-|[[Mijn eerste suite][.FrontPage.WerkenBijKnab]]|''Hier kun je beginnen met het maken van je script.''|
+|'''To Learn More...'''                                                                                    |
+|[[Eigen Test-pagina][.FrontPage.HoofdPagina]]                           |''Hier beginnen we de test.''|
+
 
 !note Release ${FITNESSE_VERSION}

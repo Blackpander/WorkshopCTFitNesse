@@ -1,0 +1,16 @@
+|Import                           |
+|nl.hsac.fitnesse.fixture         |
+|nl.hsac.fitnesse.fixture.slim    |
+|nl.hsac.fitnesse.fixture.slim.web|
+
+|script          |selenium driver setup|
+|start driver for|chrome               |
+|show            |driver description   |
+
+|library          |
+|stop test fixture|
+|browser test     |
+
+|script                                            |
+|#set browser size to|1920      |by      |828      |
+|set browser size to maximum                       |
